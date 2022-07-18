@@ -1,0 +1,17 @@
+/* Colors -----------------------------------------------------------------*/
+$color_white:                 #FFFFFF; // White
+$color_black:                 #1D1A27; // Black
+$color_primary:               #242032; //Primary color
+$color_grey:                  #6F6F70; //Primary color
+/* Fonts ------------------------------------------------------------------*/
+$font_awesome_5_pro: 'Font Awesome 5 Pro';
+$font_family_lato: 'Klavika', sans-serif;
+$default_font_family: $font_family_lato;
+$default_font_size: 1.6rem;
+$default_font_weight: 400;
+$default_line_height: 2;
+$default_font_color: $color_black;
+/* Other ------------------------------------------------------------------*/
+$regular_content_width: 114rem + 5.4rem; // content + outside gutter (left and right together)
+$image_directory: '../../images/';
+$default_transition_time: .3s;
