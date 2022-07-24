@@ -1,0 +1,14 @@
+.block-background-rectangle {
+  height: 100%;
+  width: 100vw;
+  background-color: $color_primary;
+  position: absolute;  
+  top: 0;
+  z-index: -1;
+  &.right {
+    left: 76%;
+  }
+  &.left {
+    right: 76%;
+  }
+}

@@ -1,0 +1,119 @@
+.layout-footer {
+  padding-top: 11.3rem;
+  padding-bottom: 7.2rem;
+  .footer__wrapper {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    .footer__main-information-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 7rem;
+      .footer__main-information-logo {
+        a {
+          display: flex;
+        }
+      }
+      .footer__main-information-links-wrapper {
+        display: flex;
+        .footer__main-information-link {
+          &:not(:last-child) {
+            margin-right: 4rem;
+          }
+        }
+      }
+    }
+    .footer__second-wrapper {
+      margin-top: 7.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer__second--copy-rights {
+        span {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          color: $color_grey;
+        }
+      }
+      .footer__second--image {
+        display: flex;
+        margin-right: 17rem;
+        a {
+          display: flex;
+        }
+      }
+      .footer__second--icons {
+        display: flex;
+        align-items: center;
+        .footer__second--icon {
+          &:not(:last-child) {
+            margin-right: 3.2rem;
+          }
+          a {
+            display: flex;            
+          }
+        }
+      }
+    }
+  }
+}
+
+@include res('lg') {
+  .layout-footer {
+    .footer__wrapper {
+      .footer__second-wrapper {
+        flex-wrap: wrap;
+        .footer__second--image {
+          margin-right: 0;
+        }
+        .footer__second--icons {
+          margin-top: 3rem;
+          max-width: 100%;
+          flex-basis: 100%;
+          width: 100%;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+
+@include res('md') {
+  .layout-footer {
+    padding-top: 7rem;
+    .footer__wrapper {
+      padding-left: 2.7rem;
+      padding-right: 2.7rem;
+      .footer__main-information-wrapper{
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        .footer__main-information-links-wrapper{
+          flex-flow: column;
+          margin-top: 3rem;
+          
+          .footer__main-information-link{
+            text-align: center; 
+            &:not(:last-child){
+              margin: 0;
+            }
+          }
+        }
+      }
+      .footer__second-wrapper {
+        flex-flow: column;
+        align-items: center;
+        margin-top: 3rem;
+        .footer__second--copy-rights {
+          text-align: center;
+        }
+        .footer__second--image {
+          margin-top: 3rem;
+        }
+        .footer__second--icons {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

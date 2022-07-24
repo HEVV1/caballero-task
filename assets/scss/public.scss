@@ -15,13 +15,22 @@
 @import "base/animations";
 @import "base/utilities";
 // Components
-//..........//
+@import "components/button_menu";
 // Blocks
-//..........//
+@import "blocks/header_popup";
+@import "blocks/header_logo";
+@import "blocks/dropdown_text";
+@import "blocks/about";
+@import "blocks/vertical_border";
+@import "blocks/product";
+@import "blocks/background_rectangle";
+@import "blocks/topical";
+@import "blocks/map";
 // Layouts
 @import "layouts/header";
 @import "layouts/form";
 @import "layouts/footer";
+@import "layouts/menu";
 // Pages
 //..........//
 // Browser-specific overrides

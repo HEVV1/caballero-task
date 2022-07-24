@@ -1,0 +1,53 @@
+.block-header-popup {
+  .header-popup__main-link {
+    display: block;
+    &:hover {
+      & ~ .header-popup__content {
+        transform: scale(1);
+      }
+    }
+  }
+  .header-popup__content {
+    background-color: $color_light_grey;
+    position: absolute;
+    top: 3.7rem;
+    left: 0;
+    min-width: 17.7rem;
+    transform: scale(0);
+    transition: ease-out 300ms;
+    transform-origin: left top;
+    &:hover {
+      transform: scale(1);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: 100%;
+      left: 0;
+    }
+    .header-popup__content-wrapper {
+      a {
+        transition: all 100ms;
+        display: block;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        &:hover {
+          background-color: $color_primary;
+          span {
+            color: $color_white;
+          }
+        }
+        span {
+          color: $color_grey;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          display: block;
+        }
+      }
+    }
+  }
+}

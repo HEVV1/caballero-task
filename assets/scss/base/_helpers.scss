@@ -95,6 +95,10 @@ input[type='number'] {
 }
 //Content selection
 ::selection{
-  background-color: $color_primary;
+  background-color: $color_grey;
   color: $color_white;
+}
+
+.overflow-disable{
+  overflow: hidden;
 }

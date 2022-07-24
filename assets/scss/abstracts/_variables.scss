@@ -1,11 +1,17 @@
 /* Colors -----------------------------------------------------------------*/
 $color_white:                 #FFFFFF; // White
+$color_light_grey:            #F1F1F1; // Light grey
 $color_black:                 #1D1A27; // Black
 $color_primary:               #242032; //Primary color
 $color_grey:                  #6F6F70; //Primary color
+$color_dark:                  #292929; //Color dark
+$color_alt_grey:              #EDEDED; //Color some grey
+$color_back_grey:             #E6E6E6; //Color grey for background
+$color_blue:                  #04039A; //Color Blue
 /* Fonts ------------------------------------------------------------------*/
 $font_awesome_5_pro: 'Font Awesome 5 Pro';
 $font_family_lato: 'Klavika', sans-serif;
+$font_family_exo: 'Exo2', sans-serif;
 $default_font_family: $font_family_lato;
 $default_font_size: 1.6rem;
 $default_font_weight: 400;

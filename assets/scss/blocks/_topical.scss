@@ -1,0 +1,102 @@
+.block-topical {
+  position: relative;
+  width: 100%;
+  min-height: 86.9rem;
+  display: flex;
+  align-items: center;
+  .topical__wrapper {
+    .topical__header--text {
+      margin-bottom: 4rem;
+    }
+    .topical__image-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .topical__image {
+        position: relative;
+        display: flex;
+        flex-basis: 49%;
+        max-width: 49%;
+        width: 100%;
+        overflow: hidden;
+        &:hover {
+          img {
+            transform: scale(1.3);
+          }
+        }
+        img {
+          height: 100%;
+          transition: all 3s;
+        }
+        .topical__image-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 4rem;
+          z-index: 1  ;
+          span {
+            color: $color_white;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+        }
+        .topical__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(
+            to right,
+            rgba($color: $color_black, $alpha: 0.9),
+            rgba($color: $color_black, $alpha: 0.1),
+            rgba($color: $color_black, $alpha: 0.1)
+          );
+        }
+
+      }
+    }
+  }
+  .topical__grey-rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 12.8rem);
+    background-color: $color_back_grey;
+    z-index: -1;
+  }
+}
+
+@include res('md') {
+  .block-topical {
+    min-height: auto;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .topical__wrapper {
+      margin-top: 7rem;
+      .topical__image-wrapper {
+        flex-flow: column;
+        .topical__image {
+          flex-basis: 100%;
+          max-width: 100%;
+          &:not(:last-child) {
+            margin-bottom: 3rem;
+          }
+
+          .topical__image-text {
+            padding: 1rem;
+            span {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    .topical__grey-rectangle {
+      display: none;
+    }
+  }
+}

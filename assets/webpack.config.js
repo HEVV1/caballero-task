@@ -74,6 +74,7 @@ module.exports = {
         type: "asset/resource",
         generator: {
           filename: "images/[hash][ext][query]",
+          publicPath: '../'
         },
       },
       {
@@ -82,6 +83,7 @@ module.exports = {
         type: "asset/resource",
         generator: {
           filename: "fonts/[hash][ext][query]",
+          publicPath: '../'
         },
       },
       {
